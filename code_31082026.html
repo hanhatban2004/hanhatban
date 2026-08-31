@@ -1,0 +1,282 @@
+<html style="margin:0;padding:0;">
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+(function(){
+  var s = document.createElement('style');
+  s.textContent = ':root{--bg:#1f1f21;--card:#2a2a2d;--text:#f4f4f5;--muted:#a1a1a8;--accent:#7aac2b;--accent-soft:rgba(122,172,43,.14);--accent2:#c4a87c;--accent2-soft:rgba(196,168,124,.14);--border:rgba(161,161,168,.18)}.reveal{opacity:0;transform:translateY(24px);animation:fadeUp .7s cubic-bezier(.2,.8,.2,1) forwards}.reveal:nth-child(2){animation-delay:.12s}.reveal:nth-child(3){animation-delay:.24s}.reveal:nth-child(4){animation-delay:.36s}.reveal:nth-child(5){animation-delay:.48s}.reveal:nth-child(6){animation-delay:.6s}@keyframes fadeUp{to{opacity:1;transform:translateY(0)}}@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-12px)}}@keyframes pulse-glow{0%,100%{box-shadow:0 0 0 0 rgba(122,172,43,.4)}50%{box-shadow:0 0 40px 8px rgba(122,172,43,.2)}}@keyframes shimmer{0%{background-position:-200% 0}100%{background-position:200% 0}}.float-anim{animation:float 4s ease-in-out infinite}.pulse-glow{animation:pulse-glow 2.5s ease-in-out infinite}.card-hover{transition:transform .3s cubic-bezier(.2,.8,.2,1),border-color .3s,box-shadow .3s}.card-hover:hover{transform:translateY(-6px);border-color:var(--accent);box-shadow:0 20px 60px rgba(0,0,0,.3)}.btn-primary{position:relative;overflow:hidden;transition:all .3s ease}.btn-primary::before{content:"";position:absolute;top:0;left:-100%;width:100%;height:100%;background:linear-gradient(90deg,transparent,rgba(255,255,255,.15),transparent);transition:left .5s ease}.btn-primary:hover::before{left:100%}.gradient-text{background:linear-gradient(135deg,var(--accent),var(--accent2));-webkit-background-clip:text;background-clip:text;color:transparent}.grid-bg{background-image:linear-gradient(var(--border) 1px,transparent 1px),linear-gradient(90deg,var(--border) 1px,transparent 1px);background-size:48px 48px}.feature-icon{transition:transform .3s ease}.card-hover:hover .feature-icon{transform:scale(1.1) rotate(-3deg)}';
+  document.head.appendChild(s);
+})();
+</script>
+<div style="background-color:transparent;box-sizing:border-box;">
+  <div style="color:var(--text);font-family:'Syne',sans-serif;background:var(--bg);position:relative;overflow:hidden;">
+    
+    <!-- Background decorations -->
+    <div class="grid-bg" style="position:absolute;inset:0;opacity:.25;pointer-events:none;"></div>
+    <div style="position:absolute;top:-200px;right:-100px;width:600px;height:600px;border-radius:50%;background:radial-gradient(circle,var(--accent-soft),transparent 70%);pointer-events:none;"></div>
+    <div style="position:absolute;bottom:-150px;left:-100px;width:500px;height:500px;border-radius:50%;background:radial-gradient(circle,var(--accent2-soft),transparent 70%);pointer-events:none;"></div>
+
+    <div class="max-w-6xl mx-auto px-6 py-16 relative" style="z-index:1;">
+
+      <!-- NAVBAR -->
+      <div class="reveal flex items-center justify-between mb-20">
+        <div class="flex items-center gap-3">
+          <div style="width:42px;height:42px;border-radius:12px;background:linear-gradient(135deg,var(--accent),var(--accent2));display:flex;align-items:center;justify-content:center;">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1f1f21" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+            </svg>
+          </div>
+          <span style="font-weight:700;font-size:18px;letter-spacing:-.02em;">Zalo Community</span>
+        </div>
+        <a href="https://zalo.me/g/jfoqcn198" target="_blank" class="btn-primary" style="padding:10px 22px;border-radius:10px;background:var(--accent);color:var(--bg);font-weight:700;font-size:14px;text-decoration:none;display:inline-flex;align-items:center;gap:8px;">
+          Tham gia ngay
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M5 12h14M12 5l7 7-7 7"/>
+          </svg>
+        </a>
+      </div>
+
+      <!-- HERO SECTION -->
+      <div class="reveal text-center mb-24">
+        <div style="display:inline-flex;align-items:center;gap:8px;padding:6px 16px;border-radius:999px;background:var(--accent-soft);border:1px solid var(--border);margin-bottom:28px;">
+          <span style="width:8px;height:8px;border-radius:50%;background:var(--accent);display:inline-block;"></span>
+          <span style="font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);font-weight:600;">Cộng đồng đang hoạt động</span>
+        </div>
+        
+        <h1 style="font-size:clamp(40px,6vw,72px);font-weight:800;line-height:1.05;letter-spacing:-.03em;margin-bottom:24px;">
+          Kết nối, chia sẻ,<br>
+          <span class="gradient-text">cùng phát triển</span>
+        </h1>
+        
+        <p style="font-size:18px;color:var(--muted);max-width:620px;margin:0 auto 44px;line-height:1.7;">
+          Tham gia nhóm Zalo của chúng tôi để kết nối với những người cùng đam mê, 
+          chia sẻ kiến thức và cập nhật những thông tin mới nhất mỗi ngày.
+        </p>
+        
+        <div class="flex flex-wrap gap-4 justify-center">
+          <a href="https://zalo.me/g/jfoqcn198" target="_blank" class="btn-primary pulse-glow" style="padding:16px 36px;border-radius:14px;background:linear-gradient(135deg,var(--accent),#8fc93a);color:var(--bg);font-weight:700;font-size:16px;text-decoration:none;display:inline-flex;align-items:center;gap:10px;">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/>
+              <circle cx="9" cy="7" r="4"/>
+              <path d="M22 21v-2a4 4 0 0 0-3-3.87"/>
+              <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+            </svg>
+            Tham gia nhóm Zalo
+          </a>
+          <a href="#features" style="padding:16px 32px;border-radius:14px;background:var(--card);color:var(--text);font-weight:600;font-size:16px;text-decoration:none;border:1px solid var(--border);display:inline-flex;align-items:center;gap:10px;transition:all .3s ease;" onmouseover="this.style.borderColor='var(--accent)'" onmouseout="this.style.borderColor='var(--border)'">
+            Tìm hiểu thêm
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 5v14M19 12l-7 7-7-7"/>
+            </svg>
+          </a>
+        </div>
+
+        <!-- Stats -->
+        <div class="flex flex-wrap gap-8 justify-center mt-20 pt-12" style="border-top:1px solid var(--border);">
+          <div>
+            <div style="font-size:36px;font-weight:800;color:var(--accent);">1K+</div>
+            <div style="font-size:13px;color:var(--muted);text-transform:uppercase;letter-spacing:.1em;margin-top:4px;">Thành viên</div>
+          </div>
+          <div style="width:1px;background:var(--border);"></div>
+          <div>
+            <div style="font-size:36px;font-weight:800;color:var(--accent2);">24/7</div>
+            <div style="font-size:13px;color:var(--muted);text-transform:uppercase;letter-spacing:.1em;margin-top:4px;">Hoạt động</div>
+          </div>
+          <div style="width:1px;background:var(--border);"></div>
+          <div>
+            <div style="font-size:36px;font-weight:800;color:var(--accent);">100%</div>
+            <div style="font-size:13px;color:var(--muted);text-transform:uppercase;letter-spacing:.1em;margin-top:4px;">Miễn phí</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- FEATURES SECTION -->
+      <div id="features" class="reveal mb-24">
+        <div class="text-center mb-14">
+          <p style="font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);margin-bottom:10px;">Tại sao chọn chúng tôi</p>
+          <h2 style="font-size:clamp(28px,4vw,42px);font-weight:700;letter-spacing:-.02em;">
+            Lợi ích khi <span class="gradient-text">tham gia nhóm</span>
+          </h2>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+          <!-- Feature 1 -->
+          <div class="card-hover rounded-2xl p-7" style="background:var(--card);border:1px solid var(--border);">
+            <div class="feature-icon" style="width:52px;height:52px;border-radius:14px;background:var(--accent-soft);display:flex;align-items:center;justify-content:center;color:var(--accent);margin-bottom:20px;">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                <circle cx="9" cy="7" r="4"/>
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+              </svg>
+            </div>
+            <h3 style="font-size:19px;font-weight:700;margin-bottom:10px;">Kết nối cộng đồng</h3>
+            <p style="color:var(--muted);font-size:14px;line-height:1.7;">Gặp gỡ và kết nối với hàng trăm thành viên cùng sở thích, cùng đam mê từ khắp nơi.</p>
+          </div>
+
+          <!-- Feature 2 -->
+          <div class="card-hover rounded-2xl p-7" style="background:var(--card);border:1px solid var(--border);">
+            <div class="feature-icon" style="width:52px;height:52px;border-radius:14px;background:var(--accent2-soft);display:flex;align-items:center;justify-content:center;color:var(--accent2);margin-bottom:20px;">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                <path d="M2 17l10 5 10-5"/>
+                <path d="M2 12l10 5 10-5"/>
+              </svg>
+            </div>
+            <h3 style="font-size:19px;font-weight:700;margin-bottom:10px;">Chia sẻ kiến thức</h3>
+            <p style="color:var(--muted);font-size:14px;line-height:1.7;">Cập nhật những kiến thức, kinh nghiệm và mẹo hay từ các thành viên dày dạn kinh nghiệm.</p>
+          </div>
+
+          <!-- Feature 3 -->
+          <div class="card-hover rounded-2xl p-7" style="background:var(--card);border:1px solid var(--border);">
+            <div class="feature-icon" style="width:52px;height:52px;border-radius:14px;background:var(--accent-soft);display:flex;align-items:center;justify-content:center;color:var(--accent);margin-bottom:20px;">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/>
+                <path d="M13.73 21a2 2 0 0 1-3.46 0"/>
+              </svg>
+            </div>
+            <h3 style="font-size:19px;font-weight:700;margin-bottom:10px;">Thông báo tức thì</h3>
+            <p style="color:var(--muted);font-size:14px;line-height:1.7;">Nhận thông báo nhanh chóng về những tin tức, sự kiện và cơ hội quan trọng nhất.</p>
+          </div>
+
+          <!-- Feature 4 -->
+          <div class="card-hover rounded-2xl p-7" style="background:var(--card);border:1px solid var(--border);">
+            <div class="feature-icon" style="width:52px;height:52px;border-radius:14px;background:var(--accent2-soft);display:flex;align-items:center;justify-content:center;color:var(--accent2);margin-bottom:20px;">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"/>
+                <path d="M12 6v6l4 2"/>
+              </svg>
+            </div>
+            <h3 style="font-size:19px;font-weight:700;margin-bottom:10px;">Hỗ trợ nhanh chóng</h3>
+            <p style="color:var(--muted);font-size:14px;line-height:1.7;">Đặt câu hỏi và nhận được sự hỗ trợ, giải đáp từ cộng đồng một cách nhanh chóng.</p>
+          </div>
+
+          <!-- Feature 5 -->
+          <div class="card-hover rounded-2xl p-7" style="background:var(--card);border:1px solid var(--border);">
+            <div class="feature-icon" style="width:52px;height:52px;border-radius:14px;background:var(--accent-soft);display:flex;align-items:center;justify-content:center;color:var(--accent);margin-bottom:20px;">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+              </svg>
+            </div>
+            <h3 style="font-size:19px;font-weight:700;margin-bottom:10px;">Giá trị độc quyền</h3>
+            <p style="color:var(--muted);font-size:14px;line-height:1.7;">Truy cập những nội dung, tài nguyên và ưu đãi độc quyền chỉ dành cho thành viên nhóm.</p>
+          </div>
+
+          <!-- Feature 6 -->
+          <div class="card-hover rounded-2xl p-7" style="background:var(--card);border:1px solid var(--border);">
+            <div class="feature-icon" style="width:52px;height:52px;border-radius:14px;background:var(--accent2-soft);display:flex;align-items:center;justify-content:center;color:var(--accent2);margin-bottom:20px;">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                <polyline points="22 4 12 14.01 9 11.01"/>
+              </svg>
+            </div>
+            <h3 style="font-size:19px;font-weight:700;margin-bottom:10px;">Môi trường tích cực</h3>
+            <p style="color:var(--muted);font-size:14px;line-height:1.7;">Tham gia vào một môi trường lành mạnh, tôn trọng và đầy đủ sự tích cực từ mọi thành viên.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- HOW TO JOIN -->
+      <div class="reveal mb-24">
+        <div class="rounded-3xl p-10 md:p-14" style="background:linear-gradient(135deg,var(--card),rgba(42,42,45,.5));border:1px solid var(--border);position:relative;overflow:hidden;">
+          <div style="position:absolute;top:-50px;right:-50px;width:200px;height:200px;border-radius:50%;background:var(--accent-soft);filter:blur(40px);"></div>
+          
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center relative" style="z-index:1;">
+            <div>
+              <p style="font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--accent);margin-bottom:12px;font-weight:600;">Tham gia trong 30 giây</p>
+              <h2 style="font-size:clamp(26px,3.5vw,36px);font-weight:700;letter-spacing:-.02em;margin-bottom:20px;line-height:1.2;">
+                Cách tham gia <span class="gradient-text">nhóm Zalo</span>
+              </h2>
+              <p style="color:var(--muted);font-size:15px;line-height:1.7;margin-bottom:28px;">
+                Chỉ với vài bước đơn giản, bạn đã có thể trở thành thành viên của cộng đồng của chúng tôi.
+              </p>
+              
+              <div class="space-y-5">
+                <div class="flex items-start gap-4">
+                  <div style="width:36px;height:36px;border-radius:10px;background:var(--accent-soft);display:flex;align-items:center;justify-content:center;color:var(--accent);font-weight:700;flex-shrink:0;">1</div>
+                  <div>
+                    <h4 style="font-weight:600;margin-bottom:4px;">Nhấn nút "Tham gia nhóm"</h4>
+                    <p style="color:var(--muted);font-size:14px;">Click vào nút tham gia để được chuyển đến trang nhóm Zalo</p>
+                  </div>
+                </div>
+                <div class="flex items-start gap-4">
+                  <div style="width:36px;height:36px;border-radius:10px;background:var(--accent2-soft);display:flex;align-items:center;justify-content:center;color:var(--accent2);font-weight:700;flex-shrink:0;">2</div>
+                  <div>
+                    <h4 style="font-weight:600;margin-bottom:4px;">Mở ứng dụng Zalo</h4>
+                    <p style="color:var(--muted);font-size:14px;">Đăng nhập tài khoản Zalo của bạn trên điện thoại hoặc máy tính</p>
+                  </div>
+                </div>
+                <div class="flex items-start gap-4">
+                  <div style="width:36px;height:36px;border-radius:10px;background:var(--accent-soft);display:flex;align-items:center;justify-content:center;color:var(--accent);font-weight:700;flex-shrink:0;">3</div>
+                  <div>
+                    <h4 style="font-weight:600;margin-bottom:4px;">Xác nhận tham gia</h4>
+                    <p style="color:var(--muted);font-size:14px;">Nhấn "Tham gia nhóm" và bắt đầu kết nối với cộng đồng</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="flex justify-center lg:justify-end">
+              <div class="float-anim" style="position:relative;">
+                <div style="width:280px;height:280px;border-radius:32px;background:linear-gradient(135deg,var(--accent),var(--accent2));display:flex;align-items:center;justify-content:center;position:relative;">
+                  <div style="width:240px;height:240px;border-radius:24px;background:var(--card);display:flex;align-items:center;justify-content:center;flex-direction:column;gap:16px;">
+                    <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+                    </svg>
+                    <div style="text-align:center;">
+                      <div style="font-weight:700;font-size:18px;margin-bottom:4px;">Zalo Group</div>
+                      <div style="color:var(--muted);font-size:13px;">Mã nhóm: jfoqcn198</div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Decorative elements -->
+                <div style="position:absolute;-top:10px;-right:10px;width:40px;height:40px;border-radius:12px;background:var(--accent2);opacity:.6;"></div>
+                <div style="position:absolute;-bottom:8px;-left:8px;width:28px;height:28px;border-radius:8px;background:var(--accent);opacity:.6;"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CTA SECTION -->
+      <div class="reveal text-center mb-8">
+        <div class="rounded-3xl p-12" style="background:linear-gradient(135deg,var(--accent-soft),var(--accent2-soft));border:1px solid var(--border);">
+          <h2 style="font-size:clamp(28px,4vw,44px);font-weight:800;letter-spacing:-.02em;margin-bottom:16px;line-height:1.15;">
+            Sẵn sàng tham gia <span class="gradient-text">cùng chúng tôi?</span>
+          </h2>
+          <p style="color:var(--muted);font-size:16px;max-width:500px;margin:0 auto 36px;line-height:1.7;">
+            Không còn lý do để chờ đợi. Tham gia nhóm Zalo ngay hôm nay và bắt đầu hành trình kết nối, học hỏi và phát triển!
+          </p>
+          <a href="https://zalo.me/g/jfoqcn198" target="_blank" class="btn-primary pulse-glow" style="padding:18px 44px;border-radius:16px;background:linear-gradient(135deg,var(--accent),#8fc93a);color:var(--bg);font-weight:800;font-size:17px;text-decoration:none;display:inline-flex;align-items:center;gap:12px;">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+            Tham gia nhóm Zalo ngay
+          </a>
+          <p style="margin-top:16px;font-size:13px;color:var(--muted);">
+            Link tham gia: <a href="https://zalo.me/g/jfoqcn198" target="_blank" style="color:var(--accent);text-decoration:none;">zalo.me/g/jfoqcn198</a>
+          </p>
+        </div>
+      </div>
+
+      <!-- FOOTER -->
+      <div class="pt-10 mt-4" style="border-top:1px solid var(--border);">
+        <div class="flex flex-wrap items-center justify-between gap-4">
+          <div class="flex items-center gap-3">
+            <div style="width:32px;height:32px;border-radius:10px;background:linear-gradient(135deg,var(--accent),var(--accent2));display:flex;align-items:center;justify-content:center;">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#1f1f21" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+              </svg>
+            </div>
+            <span style="font-size:14px;color:var(--muted);">Zalo Community · 2026</span>
+          </div>
+          <div style="font-size:13px;color:var(--muted);">
+            Kết nối · Chia sẻ · Phát triển
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+</html>
